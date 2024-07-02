@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prima Classe - Alviero Martini</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 10px;
+            color: #007bff; /* colore titolo */
+        }
+        h2 {
+            margin-bottom: 20px;
+            color: #555; /* colore sotto titolo */
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .gallery-item {
+            width: calc(33.33% - 20px);
+            box-sizing: border-box;
+            margin-bottom: 20px;
+            text-align: center;
+            position: relative;
+        }
+        .gallery-item img {
+            width: 366px;
+            height: 329px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .description {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        .description strong {
+            font-weight: bold;
+        }
+        .price {
+            font-size: 20px;
+            color: #007bff; /* colore prezzo */
+            margin-top: 5px;
+        }
+        @media (max-width: 992px) {
+            .gallery-item {
+                width: calc(50% - 20px);
+            }
+        }
+        @media (max-width: 768px) {
+            .gallery-item {
+                width: calc(100% - 20px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Prima Classe</h1>
+        <h2>Alviero Martini</h2>
+
+        <div class="gallery">
+            <div class="gallery-item">
+                <a href="https://ibb.co/FHW1kS4"><img src="https://i.ibb.co/BnPJHX2/alviero-Martini.jpg" alt="alviero-Martini" border="0"></a>
+                <div class="description">
+                    <p><strong>Lenzuolo raso di cotone</strong></p>
+                    <p>Misura matrimoniale, stampa sul copriletto</p>
+                    <p class="price">Prezzo: 229.00€</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <a href="https://ibb.co/BsTrS5f"><img src="https://i.ibb.co/kcq9WsG/completo-copripiumino.jpg" alt="completo-copripiumino" border="0"></a>
+                <div class="description">
+                    <p><strong>Completo copripiumino</strong></p>
+                    <p>Misura matrimoniale, raso di cotone</p>
+                    <p class="price">Prezzo: 310€</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <a href="https://ibb.co/0hKPyWM"><img src="https://i.ibb.co/m60Q5Yq/bianco-accapatoio.jpg" alt="bianco-accapatoio" border="0"></a>
+                <div class="description">
+                    <p><strong>Accappatoio unisex</strong></p>
+                    <p>Colore bianco</p>
+                    <p class="price">Prezzo: 144€</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <a href="https://ibb.co/vqrvxKJ"><img src="https://i.ibb.co/DW6gDS7/grigio.jpg" alt="grigio" border="0"></a>
+                <div class="description">
+                    <p><strong>Accappatoio unisex</strong></p>
+                    <p>Colore grigio</p>
+                    <p class="price">Prezzo: 144€</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <a href="https://ibb.co/LgfSFXv"><img src="https://i.ibb.co/wQ1ykFY/viso-e-ospite.jpg" alt="viso-e-ospite" border="0"></a>
+                <div class="description">
+                    <p><strong>Accappatoio viso e ospite</strong></p>
+                    <p>Colore bianco e marrone</p>
+                    <p class="price">Prezzo: 40€</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <a href="https://imgbb.com/"><img src="https://i.ibb.co/d61z4XS/tortora.png" alt="tortora" border="0"></a>
+                <div class="description">
+                    <p><strong>Accappatoio unisex</strong></p>
+                    <p>Colore tortora</p>
+                    <p class="price">Prezzo: 144€</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>
